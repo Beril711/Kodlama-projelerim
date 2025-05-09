@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <style>
+    *{box-sizing: border-box;}
+    .container{width: 1300px;margin:0 auto;}
+    .flex{display: flex;}
+    body{margin: 0;}
+    /* background-color: rgb(211, 225, 165); */
+    header{background-color: rgb(74, 135, 54);height: 75px;}
+    footer{background-color: rgb(74, 135, 54);height: 75px;}
+    .name{font-style: italic;font-weight: bolder;text-align: center;padding-top: 20px;font-size: xx-large;}
+    .text{padding-left: 24px;font-style: italic;}
+    .card{border:1px solid rgb(34, 74, 24);padding: 16px;box-shadow: 0 4px 8px 0 rgb(34, 74, 24), 0 6px 20px 0 rgb(34, 74, 24);width: 600px;background-color: white;}
+    img{width: 400px;height: 400px;border: 1px solid black;}
+    .satir5 img{width: 400px;height: 500px;border: 1px solid black;}
+    .satir5 .text{padding: 24px;margin-top: 20px;}
+    .satir5{margin-left:40px;margin-right: 40px;box-shadow: 0 4px 8px 0 rgb(34, 74, 24), 0 6px 20px 0 rgb(34, 74, 24);padding: 16px;background-color: white;gap: 40px;}
+    .satir6 hr{width: 200px;margin: 0;padding:0;margin-bottom: 8px;}
+    .satir6 h4{font-weight: bolder;font-size: xx-large;margin-bottom:8px;}
+    .satir6 input{width: 1170px;height: 50px;margin-bottom: 8px;}
+    .satir6{border: 1px solid rgb(34, 74, 24);padding: 40px;margin: 24px;box-shadow: 0 4px 8px 0 rgb(34, 74, 24), 0 6px 20px 0 rgb(34, 74, 24)}
+    button{width: 250px;height: 50px;}
+    button:hover a{background-color: black;color: white;}
+    button:hover i{background-color: black;color: white;}
+    button:hover{background-color: black;}
+    button a{text-decoration: none;color: black;font-weight: bold;font-size: x-large;}
+    button i{font-size: large;}
+    .simge i{font-size: x-large;}
+    .simge i:hover{background-color:black;color: white;}
+    .more{margin-top: 24px;}
+    .comment{font-size: large;margin-bottom: 16px;}
+    .satir1,.satir2,.satir3,.satir4,.satir5,.satir6,footer{margin-top: 40px;}
+    .satir1,.satir2,.satir3,.satir4,.satir5{justify-content: space-between;}
+    
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="name">VAN GOGH</div>
+    </div>
+  </header>
+  <main class="container">
+    <div>
+      <div class="satir1 flex">
+        <div class="card flex">
+          <div>
+            <img src="https://i.pinimg.com/236x/57/c5/88/57c5887d2a011219c8088c84582ff56c.jpg" alt="">
+          </div>
+          <div class="text">
+            <h4>Almond Blossoms</h4>
+            <div>Van Gogh'un Badem Çiçekleri çok güzel. Konu estetik açıdan hoş ve sanatçının onları boyamaktan duyduğu keyif sonuçta açıkça görülüyor. Bu özel tablo, çiçek açan badem ağaçlarına ayrılmış bir serinin en ünlüsüdür.</div>
+          </div>
+        </div>
+        <div class="card flex">
+          <div>
+            <img src="https://i.pinimg.com/736x/98/cd/d4/98cdd423fd4c00434c83c9bfbdb3a0f9.jpg" alt="">
+          </div>
+          <div class="text">
+            <h4>The Starry Night</h4>
+            <div>Van Gogh, sol kulağını kestiği olaydan birkaç ay sonra, 1889'da Saint-Rémy-de-Provence'daki akıl hastanesine gönüllü olarak girdi. Bu resim, akıl hastanesindeki penceresinden görülen manzaraya dayanıyordu.</div>
+          </div>
+        </div>
+      </div>
+      <div class="satir2 flex">
+        <div class="card flex">
+          <div>
+            <img src="https://i.pinimg.com/736x/0b/40/00/0b4000f7d1564a64936b2a7222bd3c83.jpg" alt="">
+          </div>
+          <div class="text">
+            <h4>Sunflowers</h4>
+            <div>Van Gogh'un kendisi ayçiçeklerinden kesinlikle memnun kalmış gibi görünüyor, hem yarattığı çok miktarda ayçiçeği bazlı tablolarda hem de kardeşine ve arkadaşlarına yazdığı mektuplardaki açıklamalarında yansıtılıyor.</div>
+          </div>
+        </div>
+        <div class="card flex">
+          <div>
+            <img src="https://i.pinimg.com/736x/80/d9/59/80d959777fa817ca31c14f24b5d389d4.jpg" alt="">
+          </div>
+          <div class="text">
+            <h4>Roses</h4>
+            <div>Cesur renklere olan sevgisini örneklendiren doygun renklerle zenginleştirilmiş güllerin sanatsal bir tasvirinden oluşur. İlk bakışta basit görünebilir, ancak bu güller, Van Gogh'un bu hayatının bu noktasındaki durumu hakkında derin anlamlar taşır - ağır mental çöküşlerin ardından bir akıl hastanesinde yaşamak.</div>
+          </div>
+        </div>
+      </div>
+      <div class="satir3 flex">
+        <div class="card flex">
+          <div>
+            <img src="https://i.pinimg.com/736x/c0/b8/80/c0b88085fef0e95ed27c55ee06d9966c.jpg" alt="">
+          </div>
+          <div class="text">
+            <h4>The Potato Eaters</h4>
+            <div>Van Gogh bu tabloyu çok sevdi. Bitirdikten iki yıl sonra, kız kardeşine “… Nuenen'de yaptığım patates yiyen köylülerin resmi, yaptığım en iyi şey” diyen bir mektup yazdı.</div>
+          </div>
+        </div>
+        <div class="card flex">
+          <div>
+            <img src="https://i.pinimg.com/736x/22/bc/5b/22bc5bd13c4390cb073187f4d65af438.jpg" alt="">
+          </div>
+          <div class="text">
+            <h4>Starry Night Over The Rhone</h4>
+            <div>Cesur renklere olan sevgisini örneklendiren doygun renklerle zenginleştirilmiş güllerin sanatsal bir tasvirinden oluşur. İlk bakışta basit görünebilir, ancak bu güller, Van Gogh'un bu hayatının bu noktasındaki durumu hakkında derin anlamlar taşır - ağır mental çöküşlerin ardından bir akıl hastanesinde yaşamak.</div>
+          </div>
+        </div>
+      </div>
+      <div class="satir4 flex">
+        <div class="card flex">
+          <div>
+            <img src="https://i.pinimg.com/736x/9a/a6/ac/9aa6acc40c1ae3b4a223b17c517a01bf.jpg" alt="">
+          </div>
+          <div class="text">
+            <h4>Cafe Terrace At Night</h4>
+            <div>Van Gogh'un kendisi de o zamanlar açıkça ilham almıştı ve resimlerinde geceyi temsil etme fikrinden heyecan duyuyordu.</div>
+          </div>
+        </div>
+        <div class="card flex">
+          <div>
+            <img src="https://i.pinimg.com/736x/c7/f7/ea/c7f7ea2c069d97290780a200b13f1b70.jpg" alt="">
+          </div>
+          <div class="text">
+            <h4>Garden At Arles</h4>
+            <div>1888 yılında Arles'teki halka açık bir bahçede geçen bir sahneyi tasvir eder.Van Gogh, küçük ve kısa fırça darbeleriyle saf ve parlak renkler kullanarak Pointillizm tekniğini uygulamıştır.</div>
+          </div>
+        </div>
+      </div>
+      <div class="satir5 flex">
+        <div>
+          <img src="https://i.pinimg.com/736x/69/5c/58/695c585dea81c365713aefce7744b61d.jpg" alt="">
+        </div>
+        <div class="text">Vincent Willem van Gogh (30 Mart 1853 — 29 Temmuz 1890), Hollandalı ard izlenimci ressamdır. Batı dünyası sanat tarihinin en tanınmış ve en etkili şahsiyetlerinden biridir. <br>On yıldan biraz fazla bir süre içinde aralarında 860 yağlı boya tablonun da olduğu 2.100 kadar resim ve çizim çalışması üretti ve bunların çoğu yaşamının son iki yılında yapıldı. Bunların arasında manzaralar, natürmortlar, portreler ve otoportreler bulunmaktadır ve modern sanatın temelleri sayılan cüretkâr renkler ile canlı, fevrî ve ifade dolu fırça darbeleriyle ayırt edilirler. <br>37 yaşında yıllardır süren psikolojik rahatsızlığı ve yoksulluğun ardından trajik bir biçimde kimilerine göre intihar, kimilerine göre bir cinayet sebebiyle silahla yaralandıktan otuz saat sonra hayata veda etti.</div>
+        <div>
+          <img src="https://i.pinimg.com/736x/e7/2a/a1/e72aa1baa849ab679a9ab1a17941a3c2.jpg" alt="">
+        </div>
+      </div>
+      <div class="satir6">
+        <div>
+          <h4>Contact Me</h4>
+        </div>
+        <hr>
+        <div class="comment">Let's get in touch. Send me a message:</div>
+        <div><input type="text" placeholder="Name"></div>
+        <div><input type="text" placeholder="Email"></div>
+        <div><input type="text" placeholder="Subject"></div>
+        <div><input type="text" placeholder="Message"></div>
+        <button><i class='bx bxs-send'></i><a href="#">Send Message</a></button>
+        <div class="flex more">
+          <div class="simge"><i class='bx bxl-facebook-square'></i></div>
+          <div class="simge"><i class='bx bxl-instagram-alt' ></i></div>
+          <div class="simge"><i class='bx bxl-snapchat' ></i></div>
+          <div class="simge"><i class='bx bxl-twitter' ></i></div>
+          <div class="simge"><i class='bx bxl-pinterest' ></i></div>
+        </div>
+        <div>Powered by <a href="#">link</a></div>
+      </div>
+    </div>
+  </main>
+  <footer></footer>
+</body>
+</html>

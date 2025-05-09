@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <style>
+    :root{
+      --text: #999999;
+      --bg-gray: #fff;
+      --bg-dark: #3d0d0e;
+      --night-dark: black;
+      --bg-darker: #232323;
+      --accent: #ff702a;
+      --big-font: 5rem; 
+      --h2-font: 2.25rem;
+      --h4-font: 1.9rem;
+      --p-font: 1.2rem;
+      --space0: 0px;
+      --space1: 8px;
+      --space2: 16px;
+      --space3: 24px;
+      --space4: 32px;
+      --space5: 40px;
+      --space6: 75px;
+      --space7: 100px;
+      --space8: 125px;
+      --space9: 150px;
+      --space10: 200px;
+      --space11: 250px;
+      --space12: 300px;
+      --space13: 460px;
+      --space14: 500px;
+      --space15: 600px;
+      --space16: 700px;
+      --container: 1100px;
+      --baş-menu: 1300px;
+    }
+    * {box-sizing: border-box;}
+    *::selection {background-color: var(--bg-dark);color: var(--bg-gray);}
+    body {margin: 0;}
+    .container {width:var(--container);margin:0 auto;}
+    .flex {display: flex;}
+    header {background-color: var(--bg-darker);height: var(--space10);text-align: center;}
+    footer {height: var(--space6);background-color: var(--bg-darker);margin-top: var(--space7);}
+    .baslik {padding-top: var(--space5);font-size: var(--h4-font);color: var(--bg-gray);font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+    .name {font-size: var(--h2-font);color: var(--bg-gray);padding-top: var(--space4);font-family: 'Times New Roman', Times, serif;}
+    .satir1 {margin-top: var(--space3);gap: var(--space10);position: sticky;}
+    .a {margin-left: var(--space8);}
+    .satir1 a {text-decoration: none;width: var(--space8);height: var(--space5);background-color: var(--text);color: var(--bg-darker);text-align: center;padding-top: var(--space1);border-radius: 10px;font-size: var(--p-font);box-shadow: 0 4px 8px 0 var(--bg-darker), 0 6px 20px 0 var(--bg-darker);}
+    .satir1 a:hover {transform: scale(110%);cursor: pointer;transition: ease-in;transition: .4s;background-color: var(--bg-dark);color: var(--bg-gray);}
+    .satir2 {margin-top: var(--space6);box-shadow: 0 4px 8px 0 var(--bg-darker), 0 6px 20px 0 var(--bg-darker);}
+    .img_1 img {width: var(--space14);height: var(--space14);padding: var(--space1);}
+    .text {text-align: center;border-left: 5px solid var(--night-dark);font-size: var(--p-font);font-weight: bold;padding-top: var(--space9);padding-left: var(--space4);padding-right: var(--space4);}
+    .satir3 {text-align: center;margin-top: var(--space7);font-family: Georgia, 'Times New Roman', Times, serif;font-size: var(--h2-font);}
+    .satir4 {margin-top: var(--space6);}
+    .satir4 .flex {justify-content: space-between;}
+    .satir5 hr {width: var(--space10);margin: var(--space0);padding:var(--space0);margin-bottom: var(--space1);}
+    .satir5 h4 {font-weight: bolder;font-size: xx-large;margin-bottom:var(--space1);}
+    .satir5 input {width: 100%;height: var(--space5);margin-bottom: var(--space1);}
+    .satir5 {border: 1px solid var(--bg-darker);padding: var(--space5);margin: var(--space3);box-shadow: 0 4px 8px 0 var(--bg-darker), 0 6px 20px 0 var(--bg-darker);margin-left:207px;margin-top: var(--space7);}
+    button{width: 250px;height: 50px;}
+    button:hover a{background-color: var(--bg-dark);color: var(--bg-gray);}
+    button:hover i{background-color: var(--bg-dark);color: var(--bg-gray);}
+    button:hover{background-color: var(--bg-dark);}
+    button a{text-decoration: none;color: var(--night-dark);font-weight: bold;font-size: x-large;}
+    .satir5 a {text-decoration: none;color: var(--bg-dark);}
+    button i{font-size: large;}
+    .simge i{font-size: x-large;}
+    .simge i:hover{background-color:var(--bg-dark);color: var(--bg-gray);}
+    .text{padding-left: 24px;font-style: italic;}
+    .more{margin-top: 24px;}
+    .comment{font-size: large;margin-bottom: 16px;}
+    .img_2 img {width: var(--space14);height: var(--space16);padding: var(--space3);box-shadow: 0 4px 8px 0 var(--bg-darker), 0 6px 20px 0 var(--bg-darker);margin-top: var(--space5);} 
+    .img_3 img {width: var(--space14);height: var(--space15);padding: var(--space3);box-shadow: 0 4px 8px 0 var(--bg-darker), 0 6px 20px 0 var(--bg-darker);margin-top: var(--space5);}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="baslik">-PHOTOGRAPHER-</div>
+    <div class="name">~&nbsp;&nbsp;HATİME&nbsp;TÜRKYILMAZ&nbsp;&nbsp;~</div>
+  </header>
+  <div class="satir1 flex container">
+    <a class="a" href="#">HOME</a>
+    <a href="#">PORTFOLİO</a>
+    <a href="#">CONTACT</a>
+  </div>
+  <div class="satir2 container">
+    <div class="flex">
+      <div class="img_1"><img src="Yeni klasör//WhatsApp Görsel 2024-12-29 saat 00.18.52_39a9d4fe.jpg" alt=""></div>
+      <div class="text">Ben Hatime Türkyılmaz. 28 yaşındayım. Liseyi grafik tasarım ve fotoğrafçılık okuyarak bitirdim. Ön lisansımı Ahi Evran Üniversitesi'nde Fotoğrafçılık ve Kameramanlık bölümünde okuyarak bitirdim. Lisansımı Erciyes Üniversitesi'nde Radyo ve Televizyon bölümü okuyarak tamamladım. Şu an yönetmenlik yapıyorum. Hobi olarak da küçük bir fotoğrafçı dükkanını işletiyorum</div>
+    </div>
+  </div>
+  <div class="satir3">
+    <div>-&nbsp;PORTFOLİO&nbsp;-</div>
+  </div>
+  <div class="satir4 container">
+    <div>
+      <div class="flex">
+        <div class="img_2">
+          <img src="https://i.pinimg.com/736x/a6/1f/34/a61f3408dd07514a63d0684c77356eb6.jpg" alt="">
+        </div>
+        <div class="img_2">
+          <img src="https://i.pinimg.com/736x/e3/5d/0b/e35d0b527426ad6debcd94daef7f32fb.jpg" alt="">
+        </div>
+      </div>
+      <div class="flex">
+        <div class="img_3">
+          <img src="https://i.pinimg.com/736x/7a/1b/d0/7a1bd04f06715ba489a1aa8a2e787379.jpg" alt="">
+        </div>
+        <div class="img_3">
+          <img src="https://i.pinimg.com/736x/2c/36/9c/2c369c8bf323a62f4880857c2abf8d9c.jpg" alt="">
+        </div>
+      </div>
+      <div class="flex">
+        <div class="img_2">
+          <img src="https://i.pinimg.com/736x/dc/6a/7c/dc6a7c0dfd65c8b908a3e034c34793bd.jpg" alt="">
+        </div>
+        <div class="img_2">
+          <img src="https://i.pinimg.com/736x/cd/27/71/cd2771c6cd308568db32af346087e85a.jpg" alt="">
+        </div>
+      </div>
+      <div class="flex">
+        <div class="img_3">
+          <img src="https://i.pinimg.com/736x/b8/5c/13/b85c13bb2ae4d37b373668898ad9daf2.jpg" alt="">
+        </div>
+        <div class="img_3">
+          <img src="https://i.pinimg.com/736x/bb/6b/2e/bb6b2ed91417e99c81ae831a121e8c36.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="satir5 container">
+    <div>
+      <h4>Contact Me</h4>
+    </div>
+    <hr>
+    <div class="comment">Let's get in touch. Send me a message:</div>
+    <div><input type="text" placeholder="Name"></div>
+    <div><input type="text" placeholder="Email"></div>
+    <div><input type="text" placeholder="Subject"></div>
+    <div><input type="text" placeholder="Message"></div>
+    <button><i class='bx bxs-send'></i><a href="#">Send Message</a></button>
+    <div class="flex more">
+      <div class="simge"><i class='bx bxl-facebook-square'></i></div>
+      <div class="simge"><i class='bx bxl-instagram-alt' ></i></div>
+      <div class="simge"><i class='bx bxl-snapchat' ></i></div>
+      <div class="simge"><i class='bx bxl-twitter' ></i></div>
+      <div class="simge"><i class='bx bxl-pinterest' ></i></div>
+    </div>
+    <div>Powered by <a href="#">link</a></div>
+  </div>
+  <footer>
+    <div></div>
+  </footer>
+</body>
+</html>

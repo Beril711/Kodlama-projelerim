@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <style>
+    *{box-sizing: border-box;}
+    .container{width: 1000px;margin:0 auto;}
+    .flex{display: flex;}
+    body{margin: 0;}
+    main .flex:not(:first-child){justify-content: space-between;}
+    .search button{border-radius: 0 50% 50% 0;}
+    .search2{display: flex;margin: 0 auto;}
+    .more{right: 0;gap: 16px;}
+    .menu{border-radius: 10%;}
+    .menu img{width: 25px;height: 25px;border-radius: 50%;}
+    .menu i{width: 25px;height: 25px;}
+    .menu{gap: 8px;margin-top: 12px;margin-left: 16px;}
+    .menu:hover{background-color: rgb(202, 201, 201);}
+    .panel{width: 200px;position: fixed;}
+    .card{margin-top: 20px;}
+    .card .text{text-align: center;}
+    .card img{width: 350px;height: 200px;border-radius: 10%;}
+    .card i{width: 25px;height: 25px;margin-right: 0;}
+    .logo img{width: 25px;height: 25px;border-radius: 50%;}
+    header{text-align: center;padding: 16px;}
+    header menu{margin-left: 0;margin-top: 0;}
+    header i{font-size: larger;font-weight: bolder;}
+    header input{font-size: large;font-weight: bolder;}
+    header img{border-radius: 50%;width: 20px;height: 20px;}
+    .kutu{background-color:rgb(202, 201, 201);color: black;padding: 8px;border-radius: 10%;}
+    .kutu:hover{background-color: black;color: white;}
+    .video{margin-top: 16px;}
+    .satir1{gap: 16px;}
+    .satir2,.satir3,.satir5,.satir6,.satir8,.satir9{gap: 40px;}
+    .satir2,.satir3,.satir4,.satir5,.satir6,.satir7,.satir8,.satir9{margin-top: 24px;}
+    .satir4 img{width: 200px;height: 400px;}
+    .satir4{justify-content: space-between;font-size: x-large;font-weight: bold;gap: 16px;}
+    .satir7 img{width: 200px;height: 400px;}
+    .satir7{justify-content: space-between;font-size: x-large;font-weight: bold;gap: 16px;}
+    .satir9{margin-bottom: 100px;}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="flex">
+      <div class="flex search2">
+        <div class="search">
+          <input type="text" placeholder="Aramak istediğiniz şeyi yazın..">
+          <button><i class='bx bx-search-alt-2'></i></button>
+        </div>
+        <div>
+          <i class='bx bx-microphone'></i>
+        </div>
+      </div>
+      <div class="flex more">
+        <i class='bx bx-video-plus'></i>
+        <i class='bx bx-bell'></i>
+        <div>
+          <img src="https://i.pinimg.com/736x/3c/78/71/3c7871d672c885b0c5402f7924e6da7a.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="panel">
+    <div class="menu flex">
+      <i class='bx bx-menu'></i>
+      <div class="flex">
+        <i class='bx bxl-youtube' ></i>
+        <div>Youtube</div>
+      </div>
+    </div>
+    <div class="menu flex">
+      <i class='bx bx-home' ></i>
+      <div>Ana Sayfa</div>
+    </div>
+    <div class="menu flex">
+      <i class='bx bx-movie-play'></i>
+      <div>Shorts</div>
+    </div>
+    <div class="menu flex">
+      <i class='bx bxl-youtube'></i>
+      <div>Abonelikler</div>
+    </div>
+    <br><hr>
+    <div class="menu">Siz&nbsp;&nbsp; ></div>
+    <div class="menu flex">
+      <i class='bx bx-history' ></i>
+      <div>Geçmiş</div>
+    </div>
+    <div class="menu flex">
+      <i class='bx bx-right-indent'></i>
+      <div>Oynatma Listeleri</div>
+    </div>
+    <div class="menu flex">
+      <i class='bx bx-video'></i>
+      <div>Videolarınız</div>
+    </div>
+    <div class="menu flex">
+      <i class='bx bx-time-five' ></i>
+      <div>Daha Sonra İzle</div>
+    </div>
+    <div class="menu flex">
+      <i class='bx bx-like' ></i>
+      <div>Beğendiğin Videolar</div>
+    </div>
+    <br><hr>
+    <div class="menu">Abonelikler</div>
+    <div class="menu flex">
+      <img src="https://avatars.mds.yandex.net/get-socsnippets/10229029/2a0000019259252980111850cb1df1831052/square_83" alt="">
+      <div>Kuruluş Osman</div>
+    </div>
+    <div class="menu flex">
+      <img src="https://avatars.mds.yandex.net/i?id=d48e3c9e53293d77ed004143f99c23720aeca5d4-4260374-images-thumbs&amp;n=13&amp;ref=image_snippet_one" alt="">
+      <div>Görkem Karaaslan</div>
+    </div>
+    <br><hr>
+    <div class="menu">Keşfet</div>
+    <div class="menu flex">
+      <i class='bx bxs-hot' ></i>
+      <div>Trendler</div>
+    </div>
+    <div class="menu flex">
+      <i class='bx bx-music' ></i>
+      <div>Müzik</div>
+    </div>
+    <div class="menu flex">
+      <i class='bx bx-station' ></i>
+      <div>Canlı</div>
+    </div>
+    <div class="menu flex">
+      <i class='bx bx-joystick' ></i>
+      <div>Oyun</div>
+    </div>
+    <div class="menu flex">
+      <i class='bx bx-trophy'></i>
+      <div>Spor</div>
+    </div>
+  </div>
+  <main class="container">
+    <div>
+      <div class="satir1 flex">
+        <div class="kutu">Tümü</div>
+        <div class="kutu">Müzik</div>
+        <div class="kutu">Mix'ler</div>
+        <div class="kutu">Pembe Diziler</div>
+        <div class="kutu">Sitcom'lar</div>
+        <div class="kutu">Son Yüklenenler</div>
+        <div class="kutu">İzlenenler</div>
+        <div class="kutu">Yeni Öneriler</div>
+      </div>
+      <div class="satir2 flex">
+        <div class="card">
+          <div>
+            <img src="https://i.pinimg.com/736x/b8/cd/a9/b8cda9039c16a970a4d4400e301e7381.jpg" alt="">
+          </div>
+          <div class="flex">
+            <div class="logo">
+              <img src="https://i.pinimg.com/736x/b8/cd/a9/b8cda9039c16a970a4d4400e301e7381.jpg" alt="">
+            </div>
+            <div class="text">Pinterest <br>Beril&nbsp;Keser<br>40B&nbsp;görüntülenme</div>
+            <div><i class='bx bx-dots-vertical-rounded' ></i></div>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <img src="https://i.pinimg.com/736x/3d/9b/9a/3d9b9ac54d495daf0f9a068a23f15633.jpg" alt="">
+          </div>
+          <div class="flex">
+            <div class="logo">
+              <img src="https://i.pinimg.com/736x/3d/9b/9a/3d9b9ac54d495daf0f9a068a23f15633.jpg" alt="">
+            </div>
+            <div class="text">Pinterest <br>Beril&nbsp;Keser<br>40B&nbsp;görüntülenme</div>
+            <div><i class='bx bx-dots-vertical-rounded' ></i></div>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <img src="https://i.pinimg.com/236x/9c/47/c3/9c47c338ed6f56fb13d3a8bac1f7f6fb.jpg" alt="">
+          </div>
+          <div class="flex">
+            <div class="logo">
+              <img src="https://i.pinimg.com/236x/9c/47/c3/9c47c338ed6f56fb13d3a8bac1f7f6fb.jpg" alt="">
+            </div>
+            <div class="text">Pinterest <br>Beril&nbsp;Keser<br>40B&nbsp;görüntülenme</div>
+            <div><i class='bx bx-dots-vertical-rounded' ></i></div>
+          </div>
+        </div>
+      </div>
+      <div class="satir3 flex">
+        <div class="card">
+          <div>
+            <img src="https://i.pinimg.com/736x/1e/5a/80/1e5a80a340e77329233f46e3f9d77911.jpg" alt="">
+          </div>
+          <div class="flex">
+            <div class="logo">
+              <img src="https://i.pinimg.com/736x/1e/5a/80/1e5a80a340e77329233f46e3f9d77911.jpg" alt="">
+            </div>
+            <div class="text">Pinterest <br>Beril&nbsp;Keser<br>40B&nbsp;görüntülenme</div>
+            <div><i class='bx bx-dots-vertical-rounded' ></i></div>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <img src="https://i.pinimg.com/736x/be/63/68/be6368ad82292795f637498373327777.jpg" alt="">
+          </div>
+          <div class="flex">
+            <div class="logo">
+              <img src="https://i.pinimg.com/736x/be/63/68/be6368ad82292795f637498373327777.jpg" alt="">
+            </div>
+            <div class="text">Pinterest <br>Beril&nbsp;Keser<br>40B&nbsp;görüntülenme</div>
+            <div><i class='bx bx-dots-vertical-rounded' ></i></div>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <img src="https://i.pinimg.com/236x/fd/1d/fc/fd1dfc505cd2b6e1811d429c1fd22b66.jpg" alt="">
+          </div>
+          <div class="flex">
+            <div class="logo">
+              <img src="https://i.pinimg.com/236x/fd/1d/fc/fd1dfc505cd2b6e1811d429c1fd22b66.jpg" alt="">
+            </div>
+            <div class="text">Pinterest <br>Beril&nbsp;Keser<br>40B&nbsp;görüntülenme</div>
+            <div><i class='bx bx-dots-vertical-rounded' ></i></div>
+          </div>
+        </div>
+      </div>
+      <div class="satir4">
+        <div class="flex">
+          <i class='bx bx-play-circle'></i>
+          <div>Shorts</div>
+        </div>
+        <div class="flex video">
+          <div>
+            <img src="https://i.pinimg.com/236x/1e/45/5b/1e455bf2db6423e9265b47969886a321.jpg" alt="">
+            <div class="flex">
+              <div>Pinterest <br>Beril&nbsp;Keser<br>40B&nbsp;görüntülenme</div>
+              <div><i class='bx bx-dots-vertical-rounded' ></i></div>
+            </div>
+          </div>
+          <div>
+            <img src="https://i.pinimg.com/736x/bb/4e/f3/bb4ef391ec85d4f9275991fed270e5f1.jpg" alt="">
+            <div class="flex">
+              <div>Pinterest <br>Beril&nbsp;Keser<br>40B&nbsp;görüntülenme</div>
+              <div><i class='bx bx-dots-vertical-rounded' ></i></div>
+            </div>
+          </div>
+          <div>
+            <img src="https://i.pinimg.com/236x/00/11/08/001108a35d80f1fd498d1eb95d020e48.jpg" alt="">
+            <div class="flex">
+              <div>Pinterest <br>Beril&nbsp;Keser<br>40B&nbsp;görüntülenme</div>
+              <div><i class='bx bx-dots-vertical-rounded' ></i></div>
+            </div>
+          </div>
+          <div>
+            <img src="https://i.pinimg.com/736x/65/e5/1e/65e51e9279dcf3fa0ff67c5157a458a3.jpg" alt="">
+            <div class="flex">
+              <div>Pinterest <br>Beril&nbsp;Keser<br>40B&nbsp;görüntülenme</div>
+              <div><i class='bx bx-dots-vertical-rounded' ></i></div>
+            </div>
+          </div>
+          <div>
+            <img src="https://i.pinimg.com/736x/90/4f/17/904f17988eab6d9c97d87ed90fec1298.jpg" alt="">
+            <div class="flex">
+              <div>Pinterest <br>Beril&nbsp;Keser<br>40B&nbsp;görüntülenme</div>
+              <div><i class='bx bx-dots-vertical-rounded' ></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="satir5 flex">
+        <div class="card">
+          <div>
+            <img src="https://i.pinimg.com/736x/da/00/bd/da00bd01214f771cbe5b38068b3b5738.jpg" alt="">
+          </div>
+          <div class="flex">
+            <div class="logo">
+              <img src="https://i.pinimg.com/736x/da/00/bd/da00bd01214f771cbe5b38068b3b5738.jpg" alt="">
+            </div>
+            <div class="text">Pinterest <br>Beril&nbsp;Keser<br>40B&nbsp;görüntülenme</div>
+            <div><i class='bx bx-dots-vertical-rounded' ></i></div>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <img src="https://i.pinimg.com/236x/78/d2/dc/78d2dcdc53a21bd2ed73957bf7e0d4e7.jpg" alt="">
+          </div>
+          <div class="flex">
+            <div class="logo">
+              <img src="https://i.pinimg.com/236x/78/d2/dc/78d2dcdc53a21bd2ed73957bf7e0d4e7.jpg" alt="">
+            </div>
+            <div class="text">Pinterest <br>Beril&nbsp;Keser<br>40B&nbsp;görüntülenme</div>
+            <div><i class='bx bx-dots-vertical-rounded' ></i></div>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <img src="https://i.pinimg.com/474x/6a/63/d2/6a63d212a0aa86433ad1bd56b68aa66f.jpg" alt="">
+          </div>
+          <div class="flex">
+            <div class="logo">
+              <img src="https://i.pinimg.com/474x/6a/63/d2/6a63d212a0aa86433ad1bd56b68aa66f.jpg" alt="">
+            </div>
+            <div class="text">Pinterest <br>Beril&nbsp;Keser<br>40B&nbsp;görüntülenme</div>
+            <div><i class='bx bx-dots-vertical-rounded' ></i></div>
+          </div>
+        </div>
+      </div>
+      <div class="satir6 flex">
+        <div class="card">
+          <div>
+            <img src="https://i.pinimg.com/736x/8b/b0/a6/8bb0a66dd994733e38a5f2c38f785bf1.jpg" alt="">
+          </div>
+          <div class="flex">
+            <div class="logo">
+              <img src="https://i.pinimg.com/736x/8b/b0/a6/8bb0a66dd994733e38a5f2c38f785bf1.jpg" alt="">
+            </div>
+            <div class="text">Pinterest <br>Beril&nbsp;Keser<br>40B&nbsp;görüntülenme</div>
+            <div><i class='bx bx-dots-vertical-rounded' ></i></div>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <img src="https://i.pinimg.com/736x/1e/f2/4c/1ef24c981adac554b05510a6024635f5.jpg" alt="">
+          </div>
+          <div class="flex">
+            <div class="logo">
+              <img src="https://i.pinimg.com/736x/1e/f2/4c/1ef24c981adac554b05510a6024635f5.jpg" alt="">
+            </div>
+            <div class="text">Pinterest <br>Beril&nbsp;Keser<br>40B&nbsp;görüntülenme</div>
+            <div><i class='bx bx-dots-vertical-rounded' ></i></div>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <img src="https://i.pinimg.com/736x/96/54/63/965463615901e9128057c5fa3c82d24b.jpg" alt="">
+          </div>
+          <div class="flex">
+            <div class="logo">
+              <img src="https://i.pinimg.com/736x/96/54/63/965463615901e9128057c5fa3c82d24b.jpg" alt="">
+            </div>
+            <div class="text">Pinterest <br>Beril&nbsp;Keser<br>40B&nbsp;görüntülenme</div>
+            <div><i class='bx bx-dots-vertical-rounded' ></i></div>
+          </div>
+        </div>
+      </div>
+      <div class="satir7">
+        <div class="flex">
+          <i class='bx bx-play-circle'></i>
+          <div>Shorts</div>
+        </div>
+        <div class="flex video">
+          <div>
+            <img src="https://i.pinimg.com/736x/d6/a8/45/d6a8452bc93a10e54e2e53c3b0cfa9ad.jpg" alt="">
+            <div class="flex">
+              <div>Pinterest <br>Beril&nbsp;Keser<br>40B&nbsp;görüntülenme</div>
+              <div><i class='bx bx-dots-vertical-rounded' ></i></div>
+            </div>
+          </div>
+          <div>
+            <img src="https://i.pinimg.com/736x/2f/06/64/2f066439167c6794fa4a24293cafde4c.jpg" alt="">
+            <div class="flex">
+              <div>Pinterest <br>Beril&nbsp;Keser<br>40B&nbsp;görüntülenme</div>
+              <div><i class='bx bx-dots-vertical-rounded' ></i></div>
+            </div>
+          </div>
+          <div>
+            <img src="https://i.pinimg.com/736x/4d/b3/26/4db326fba697fc5f1c91bc2990d3cc61.jpg" alt="">
+            <div class="flex">
+              <div>Pinterest <br>Beril&nbsp;Keser<br>40B&nbsp;görüntülenme</div>
+              <div><i class='bx bx-dots-vertical-rounded' ></i></div>
+            </div>
+          </div>
+          <div>
+            <img src="https://i.pinimg.com/736x/53/26/9b/53269bb82d3b2835b3ca65e0dbfe5324.jpg" alt="">
+            <div class="flex">
+              <div>Pinterest <br>Beril&nbsp;Keser<br>40B&nbsp;görüntülenme</div>
+              <div><i class='bx bx-dots-vertical-rounded' ></i></div>
+            </div>
+          </div>
+          <div>
+            <img src="https://i.pinimg.com/736x/ef/ab/1b/efab1be1734756b71ebeb301702ed4ee.jpg" alt="">
+            <div class="flex">
+              <div>Pinterest <br>Beril&nbsp;Keser<br>40B&nbsp;görüntülenme</div>
+              <div><i class='bx bx-dots-vertical-rounded' ></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="satir8 flex">
+        <div class="card">
+          <div>
+            <img src="https://i.pinimg.com/736x/e8/f4/f8/e8f4f8fb64fc501f4c778423307c2d31.jpg" alt="">
+          </div>
+          <div class="flex">
+            <div class="logo">
+              <img src="https://i.pinimg.com/736x/e8/f4/f8/e8f4f8fb64fc501f4c778423307c2d31.jpg" alt="">
+            </div>
+            <div class="text">Pinterest <br>Beril&nbsp;Keser<br>40B&nbsp;görüntülenme</div>
+            <div><i class='bx bx-dots-vertical-rounded' ></i></div>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <img src="https://i.pinimg.com/736x/e5/4a/75/e54a75a28bde488f1268f21092f7f036.jpg" alt="">
+          </div>
+          <div class="flex">
+            <div class="logo">
+              <img src="https://i.pinimg.com/736x/e5/4a/75/e54a75a28bde488f1268f21092f7f036.jpg" alt="">
+            </div>
+            <div class="text">Pinterest <br>Beril&nbsp;Keser<br>40B&nbsp;görüntülenme</div>
+            <div><i class='bx bx-dots-vertical-rounded' ></i></div>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <img src="https://i.pinimg.com/736x/3d/1d/18/3d1d189beac40385d73ad80dd557d1f5.jpg" alt="">
+          </div>
+          <div class="flex">
+            <div class="logo">
+              <img src="https://i.pinimg.com/736x/3d/1d/18/3d1d189beac40385d73ad80dd557d1f5.jpg" alt="">
+            </div>
+            <div class="text">Pinterest <br>Beril&nbsp;Keser<br>40B&nbsp;görüntülenme</div>
+            <div><i class='bx bx-dots-vertical-rounded' ></i></div>
+          </div>
+        </div>
+      </div>
+      <div class="satir9 flex">
+        <div class="card">
+          <div>
+            <img src="https://i.pinimg.com/736x/46/b3/0d/46b30d73644c59da1cbab4f77601b83e.jpg" alt="">
+          </div>
+          <div class="flex">
+            <div class="logo">
+              <img src="https://i.pinimg.com/736x/46/b3/0d/46b30d73644c59da1cbab4f77601b83e.jpg" alt="">
+            </div>
+            <div class="text">Pinterest <br>Beril&nbsp;Keser<br>40B&nbsp;görüntülenme</div>
+            <div><i class='bx bx-dots-vertical-rounded' ></i></div>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <img src="https://i.pinimg.com/736x/7e/2c/31/7e2c31544d67d84620fdd5af7592205f.jpg" alt="">
+          </div>
+          <div class="flex">
+            <div class="logo">
+              <img src="https://i.pinimg.com/736x/7e/2c/31/7e2c31544d67d84620fdd5af7592205f.jpg" alt="">
+            </div>
+            <div class="text">Pinterest <br>Beril&nbsp;Keser<br>40B&nbsp;görüntülenme</div>
+            <div><i class='bx bx-dots-vertical-rounded' ></i></div>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <img src="https://i.pinimg.com/736x/ea/98/19/ea9819f520e6b7774deca6a3f5c37eb3.jpg" alt="">
+          </div>
+          <div class="flex">
+            <div class="logo">
+              <img src="https://i.pinimg.com/736x/ea/98/19/ea9819f520e6b7774deca6a3f5c37eb3.jpg" alt="">
+            </div>
+            <div class="text">Pinterest <br>Beril&nbsp;Keser<br>40B&nbsp;görüntülenme</div>
+            <div><i class='bx bx-dots-vertical-rounded' ></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

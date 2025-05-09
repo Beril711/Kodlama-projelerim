@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <style>
+    :root{
+      --text: #999999;
+      --bg-gray: #fff;
+      --bg-dark: #1e1c2a;
+      --night-dark: black;
+      --bg-darker: #232323;
+      --accent: #ff702a;
+      --big-font: 5rem; 
+      --h2-font: 2.25rem;
+      --p-font: 0.9rem;
+      --space0: 0px;
+      --space1: 8px;
+      --space2: 16px;
+      --space3: 24px;
+      --space4: 32px;
+      --space5: 40px;
+      --space6: 75px;
+      --space7: 100px;
+      --space8: 125px;
+      --space9: 150px;
+      --space10: 200px;
+      --space11: 250px;
+      --space12: 300px;
+      --space13: 400px;
+      --space14: 500px;
+      --container: 1200px;
+      --baş-menu: 1300px;
+    }
+    * {box-sizing: border-box;}
+    *::selection {background-color: var(--accent);color: var(--bg-gray);}
+    body {margin: 0;background-color:var(--bg-dark);}
+    .container {width:var(--container);margin:0 auto;}
+    .flex {display: flex;}
+    .rel {position: relative;}
+    .satir1 {position: fixed;text-align: center;padding-right: var(--space5);background-color: var(--bg-dark);z-index: 1111;top: 0;right: 0;left: 0;;padding-top: var(--space3);padding-left: var(--space5);}
+    .baslik a {text-decoration: none;color: var(--accent);font-weight: bold;font-size: xx-large;font-family: sans-serif;}
+    .satir1 .baslik {padding-left: var(--space7);}
+    .satir1 nav ul {list-style-type: none;gap:var(--space2);color: var(--bg-gray);font-weight: bold;font-size: large;margin-top:var(--space1);font-family: sans-serif;text-align: center;}
+    .satir1 nav li:hover {color: var(--accent);cursor: pointer;transition: .4s;}
+    .satir1 .flex {justify-content: space-between;}
+    .satir2 {align-items: center;justify-content: none;gap:var(--space7);margin-left: var(--space6);margin-top:var(--space8);font-family: sans-serif;}
+    .satir3 {margin-left: var(--space4);margin-top: var(--space8);gap: var(--space6);align-items: center;}
+    .satir4 {text-align: center;margin-top: var(--space7);}
+    .satir5 {margin-top: var(--space7);gap: var(--space2);padding-left: var(--space3);}
+    .satir6 {margin-top: var(--space5);margin-bottom: var(--space5);}
+    .satir7 {margin-top: var(--space7);gap: var(--space5);color: var(--text);margin-bottom: var(--space7);}
+    .satir7 > .flex {gap: var(--space10);}
+    .satir7 h4 {margin: 0;padding: 0;border-bottom: 1px solid var(--accent);padding-bottom: var(--space1);color: var(--bg-gray);font-size: large;}
+    .satir7 h4:hover {cursor: pointer;}
+    .satir7 nav ul {list-style-type: none;padding-left: 0px;}
+    .satir7 nav li:hover {transform: translateX(-10px);cursor: pointer;color: var(--bg-gray);font-size: larger;transition: .4s;}
+    .satir7 nav li {margin-bottom: var(--space2);font-size: large;}
+    .icon {width: var(--space4);height: var(--space4);border-radius: 50%;background-color: var(--accent);padding-top: 6px;}
+    .icon:hover {transform: scale(110%);cursor: pointer;transition: ease-in;background-color: var(--bg-gray);transition: .4s;}
+    .icon:hover i {color: black;transition: .4s;}
+    .icon i {font-size: larger;color: var(--bg-gray);}
+    .link {gap: var(--space3);margin-top: var(--space2);text-align: center;}
+    .satir5 img {width: var(--space6);height: var(--space6);}
+    .satir5 .text1 {text-align: center;}
+    .satir5 .comment {text-align: center;}
+    .satir5 .flex {gap: var(--space5);margin-left: var(--space8);margin-top: var(--space5);}
+    .satir4 .flex {gap: var(--space5);margin-left: var(--space8);margin-top: var(--space5);}
+    .satir4 img {width: 150px;height: 150px;margin-bottom: var(--space1);}
+    .card1 {width: var(--space12);height:var(--space11);background-color: var(--bg-gray);text-align: center;border-radius: 10px;padding: var(--space1);}
+    .card1 i {width:var(--space3);height: var(--space3);position: absolute;right: 0;top: 0;background-color:var(--accent);color: var(--bg-gray);}
+    .card1 i:hover {cursor: pointer;transition: .4s;}
+    .card2 {width: var(--space12);height: var(--space11);text-align: center;}
+    .card3 {width:var(--container) ;height: var(--space11);background-color:var(--bg-gray);text-align: center;border-radius: 10px;padding: var(--space1);}
+    .card3:first-child {padding-top: var(--space5);}
+    .card3 button {margin-top: var(--space3);border: none;}
+    .name {font-size: var(--p-font);color:var(--night-dark);font-weight: bold;margin-bottom: var(--space1);}
+    .fiyat {color: var(--accent);margin-top: var(--space1);}
+    button {padding: var(--space2);color: var(--bg-gray);background-color:var(--accent);border-radius: 10px;border: none;}
+    button:hover {transform: scale(110%);cursor: pointer;transition: ease-in;transition: .4s;}
+    .text {font-size: var(--p-font);font-family: sans-serif;color: var(--bg-gray);margin-bottom: var(--space4);}
+    .text a {text-decoration: none;color: var(--accent);margin-bottom: var(--space1);}
+    .text1 {margin-bottom: var(--space1);font-size: var(--p-font);font-family: sans-serif;color: var(--accent);}
+    .text2 {font-weight: bold;font-size: var(--h2-font);font-family: sans-serif;}
+    .baslik {font-size: var(--big-font);font-weight: bold;color: var(--accent);}
+    .comment {font-size: var(--h2-font);margin-bottom: var(--space2);font-weight: bold;color: var(--bg-gray);font-family: sans-serif;}
+    .satir1 i {font-size: var(--h2-font);color: var(--bg-gray);display: none;}
+    .satir1 i:hover {color: var(--accent);cursor: pointer;transition: .4s;}
+    .satir2 img {width: var(--space14);height: var(--space14);}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="satir1 ">
+      <div class="flex">
+        <div class="baslik">
+          <a href="#">Foods</a>
+        </div>
+        <div><i class='bx bx-menu'></i></div>
+        <div>
+          <nav>
+            <ul class="flex">
+              <li>Home</li>
+              <li>About</li>
+              <li>Menu</li>
+              <li>Service</li>
+              <li>Contact</li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="satir2 flex">
+      <div>
+        <div class="baslik">Full Website</div>
+        <div class="comment">Foods the <br> most precious things</div>
+        <button>Today's Menu</button>
+      </div>
+      <div><img src="c:\Users\HUAWEİ\Desktop\Yeni klasör (2)\home.png" alt=""></div>
+    </div>
+    <div class="satir3 flex">
+      <div><img src="c:\Users\HUAWEİ\Desktop\Yeni klasör (2)\about.png" alt=""></div>
+      <div>
+        <div class="text"><a href="#">About us</a></div>
+        <div class="comment">We speak the good <br> food language</div>
+        <div class="text">There are many variations passages of Lorem Ipsum available, but the <br> majority have suffered alteration in form, by injected humour randomised <br> words which don't look even slightly believable.</div>
+        <button>Learn More</button>
+      </div>
+    </div>
+    <div class="satir4">
+      <div>
+        <div class="text1">Food Menu</div>
+        <div class="comment">Fresh taste and great price</div>
+      </div>
+      <div class="flex">
+        <div class="card1 rel">
+          <div><i class='bx bx-cart-alt'></i></div>
+          <img src="c:\Users\HUAWEİ\Desktop\Yeni klasör (2)\food1.png" alt="">
+          <div class="name">Chicken Burger</div>
+          <div>Tasty Food</div>
+          <div class="fiyat">$11.00</div>
+        </div>
+        <div class="card1 rel">
+          <div><i class='bx bx-cart-alt'></i></div>
+          <img src="c:\Users\HUAWEİ\Desktop\Yeni klasör (2)\food2.png" alt="">
+          <div class="name">Special Beef Burger</div>
+          <div>Tasty Food</div>
+          <div class="fiyat">$11.00</div>
+        </div>
+        <div class="card1 rel">
+          <div><i class='bx bx-cart-alt'></i></div>
+          <img src="c:\Users\HUAWEİ\Desktop\Yeni klasör (2)\food3.png" alt="">
+          <div class="name">Chicken Fry Pack</div>
+          <div>Tasty Food</div>
+          <div class="fiyat">$11.00</div>
+        </div>
+      </div>
+    </div>
+    <div class="satir5">
+      <div>
+        <div class="text1">Services</div>
+        <div class="comment">We provide best quality food</div>
+      </div>
+      <div class="flex">
+        <div class="card2">
+          <img src="c:\Users\HUAWEİ\Desktop\Yeni klasör (2)\s1.png" alt="">
+          <div class="text1">Order</div>
+          <div class="text">There are many variations passages of <br> Lorem Ipsum available, but the majority have <br> suffered alteration in form, by injected humour </div>
+        </div>
+        <div class="card2">
+          <img src="c:\Users\HUAWEİ\Desktop\Yeni klasör (2)\s2.png" alt="">
+          <div class="text1">Shipping</div>
+          <div class="text">There are many variations passages of <br> Lorem Ipsum available, but the majority have <br> suffered alteration in form, by injected humour</div>
+        </div>
+        <div class="card2">
+          <img src="c:\Users\HUAWEİ\Desktop\Yeni klasör (2)\s3.png" alt="">
+          <div class="text1">Delivered</div>
+          <div class="text">There are many variations passages of <br> Lorem Ipsum available, but the majority have <br> suffered alteration in form, by injected humour</div>
+        </div>
+      </div>
+    </div>
+    <div class="satir6">
+      <div class="card3">
+        <div class="text2">We make quality food</div>
+        <div class="text2">Everyday</div>
+        <button>Let's Talk</button>
+      </div>
+    </div>
+    <div class="satir7">
+      <div class="flex">
+        <div>
+          <h4>Menu Links</h4>
+          <nav>
+            <ul>
+              <li>Home</li>
+              <li>About</li>
+              <li>Menu</li>
+              <li>Service</li>
+              <li>Contact</li>
+            </ul>
+          </nav>
+        </div>
+        <div>
+          <h4>Our Service</h4>
+          <nav>
+            <ul>
+              <li>Web Disagn</li>
+              <li>Web Development</li>
+              <li>Marketing</li>
+              <li>Product Mangement</li>
+              <li>Graphic Disagn</li>
+            </ul>
+          </nav>
+        </div>
+        <div>
+          <h4>Information</h4>
+          <nav>
+            <ul>
+              <li>About Us</li>
+              <li>Delivery Information</li>
+              <li>Privacy Policy</li>
+              <li>Terms & Conditions</li>
+            </ul>
+          </nav>
+        </div>
+        <div>
+          <h4>Contact Us</h4>
+          <div class="flex link">
+            <div class="icon"><i class='bx bxl-facebook' ></i></div>
+            <div class="icon"><i class='bx bxl-instagram' ></i></div>
+            <div class="icon"><i class='bx bxl-twitter' ></i></div>
+            <div class="icon"><i class='bx bxl-youtube' ></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

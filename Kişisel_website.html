@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    :root {
+      --bg-gray: #fff;
+      --bg-dark: #1e1c2a;
+      --night-dark: black;
+      --bg-darker: #232323;
+      --green: rgb(29, 62, 29);
+      --big-font: 5rem; 
+      --h2-font: 2.25rem;
+      --p-font: 1.5rem;
+      --space0: 0px;
+      --space1: 8px;
+      --space2: 16px;
+      --space3: 24px;
+      --space4: 32px;
+      --space5: 40px;
+      --space6: 75px;
+      --space7: 100px;
+      --space8: 125px;
+      --space9: 150px;
+      --space10: 200px;
+      --space11: 250px;
+      --space12: 300px;
+      --space13: 400px;
+      --space14: 500px;
+      --space15: 600px;
+      --space16: 700px;
+      --space17: 930px;
+      --space18: 1000px;
+      --container: 1500px;
+    }
+    * {box-sizing: border-box;}
+    *::selection {background-color: var(--night-dark);color: var(--bg-gray);}
+    body {margin: 0;}
+    .container {width:var(--container);margin: 0 auto;}
+    .flex {display: flex;}
+    header {background-color: var(--green);height: var(--space7);padding: var(--space5);}
+    header .flex {justify-content: space-between;}
+    header h2 {font-size: var(--h2-font);color: var(--bg-gray);}
+    header h2:hover {cursor: pointer;}
+    header a {text-decoration: none;color: var(--night-dark);}
+    header li:hover {color: var(--night-dark);transition: 1s;cursor: pointer;}
+    header nav ul {list-style-type: none;color: var(--bg-gray);font-size: var(--p-font);padding-top: var(--space2);gap: var(--space4);}
+    header button:hover {cursor: pointer;background-color: var(--bg-gray);color: var(--night-dark);transition: 2s;transform: scale(110%);}
+    header button {font-size: var(--h2-font);background-color: var(--green);color: var(--bg-gray);margin-top: var(--space4);border-radius: var(--space2);box-shadow: 0 4px 8px 0 var(--bg-gray), 0 6px 20px 0 var(--bg-gray);}
+    .text {font-size: var(--h2-font);color: var(--bg-gray);margin-top: var(--space8);}
+    .text2 {font-size: var(--h2-font);color: var(--bg-gray);margin-top:var(--space2)}
+    .text3 {font-size: var(--p-font);color: var(--bg-gray);margin-top:var(--space5)}
+    .text4 {font-size: var(--p-font);color: var(--bg-gray);margin-top:var(--space4)}
+    .name {font-size:var(--big-font);color: var(--bg-gray);margin-top: var(--space3);}
+    .name1 {font-size:var(--big-font);color: var(--bg-gray);margin-top: var(--space9);} 
+    .giris img {width: var(--space13);height: var(--space15);margin-left: var(--space10);border-radius: 10px;}
+    .giris input {margin-top: var(--space5);width:100%;height: var(--space5);border-radius: 10px;border: 3px solid var(--night-dark);}
+    .giris input:hover {cursor: pointer;background-color: var(--night-dark);color: var(--bg-gray);transition: 1s;}
+    .satir1 {background-color: var(--green);padding-top: var(--space6);padding-left: var(--space14);padding-bottom: var(--space6);}
+    .satir1 a {text-decoration: none;color: var(--night-dark);}
+    .satir2 {background-color: #3d5c37;padding-top: var(--space5);padding-bottom: var(--space7);}
+    .satir2 button:hover {cursor: pointer;background-color: var(--bg-gray);color: var(--night-dark);transition: 2s;transform: scale(110%);}
+    .satir2 button {margin-top: var(--space5);width: var(--space8);height: var(--space5);border-radius: var(--space2);background-color: var(--green);color: var(--bg-gray);box-shadow: 0 4px 8px 0 var(--bg-gray), 0 6px 20px 0 var(--bg-gray);}
+    .satir2 a {text-decoration: none;color: var(--night-dark);}
+    .satir2 img {width: var(--space13);height: var(--space16);margin-left: var(--space8);margin-right: var(--space7);}
+    .satir3 {background-color: var(--green);padding-top: var(--space7);padding-bottom: var(--space7);}
+    .satir3 .flex {align-items: center;gap: var(--space5);margin-right: var(--space9);}
+    .card {text-align: center;width: var(--space13);height: var(--space13);background-color: #3d5c37;color: var(--bg-gray);border-radius: var(--space2);margin-top: var(--space4);margin-right: var(--space4);padding: var(--space2);}
+    .card i {font-size: var(--big-font);margin-top: var(--space2);color: var(--green);}
+    .card .text3 {margin-bottom: var(--space3);}
+    .card button {margin-top: var(--space3);width: var(--space8);height: var(--space5);border-radius: var(--space2);background-color: var(--green);color: var(--bg-gray);box-shadow: 0 4px 8px 0 var(--bg-gray), 0 6px 20px 0 var(--bg-gray);}
+    .card button:hover {cursor: pointer;background-color: var(--bg-gray);color: var(--night-dark);transition: 2s;transform: scale(110%);}
+    .satir3 h1 {font-size: var(--big-font);text-align: center;margin: 0;}
+    .satir4 {background-color: #3d5c37;padding-top: var(--space5);text-align: center;padding-top: var(--space6);padding-bottom: var(--space6);}
+    .satir4 .text5 {font-size: var(--h2-font);font-weight: bold;}
+    .text5 h2 {margin: 0;}
+    .text6 {font-size: var(--h2-font);font-weight: bold;padding-top: var(--space5);}
+    .text7 {font-size: var(--p-font);padding-top: var(--space4);}
+    .text8 {font-size: var(--p-font);}
+    .satir4 button {margin-top: var(--space5);width: var(--space8);height: var(--space5);border-radius: var(--space2);background-color: var(--green);color: var(--bg-gray);box-shadow: 0 4px 8px 0 var(--bg-gray), 0 6px 20px 0 var(--bg-gray);}
+    .satir4 button:hover {cursor: pointer;background-color: var(--bg-gray);color: var(--night-dark);transition: 2s;transform: scale(110%);}
+    .satir5 {background-color: var(--green);padding-top: var(--space5);text-align: center;padding-top: var(--space6);padding-bottom: var(--space6);}
+    .satir5 .flex {margin-left: var(--space17);gap: var(--space2);padding-top: var(--space4);}
+    .icon {width: var(--space5);height: var(--space5);border-radius: 50%;background-color:#3d5c37;padding-top: var(--space1);color: var(--bg-gray);text-align: center;}
+    .icon:hover {transform: scale(110%);cursor: pointer;background-color: var(--night-dark);transition: .2s;color: var(--bg-gray);}
+    .icon i {font-size: var(--p-font);color: var(--bg-gray);}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="flex container">
+      <div>
+        <h2>Portfo<a href="#">lio</a></h2>
+      </div>
+      <div>
+        <nav>
+          <ul class="flex">
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Services</li>
+            <li>Skills</li>
+            <li>Contact Us</li>
+          </ul>
+        </nav>
+      </div>
+      <div>
+        <button>Subscribe</button>
+      </div>
+    </div>
+  </header>
+  <div class="satir1">
+    <div class="flex giris">
+      <div>
+        <div class="text">Hello , my name is</div>
+        <div class="name">Beril  <a href="#">Keser</a> </div>
+        <div class="text2">I'am a Web Developer</div>
+        <div class="flex">
+          <input type="email" placeholder="Enter your email">
+          <input type="submit" placeholder="Let's strart">
+        </div>
+      </div>
+      <div>
+        <img src="https://i.pinimg.com/736x/a2/7b/f4/a27bf49e74d8326771b2a4abf979dd0c.jpg" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="satir2">
+    <div class="flex container">
+      <div>
+        <img src="C:\Users\HUAWEİ\Desktop\WhatsApp Görsel 2024-12-22 saat 16.17.29_05fdb2c2.jpg" alt="">
+      </div>
+      <div>
+        <div class="name1">About Me</div>
+        <div class="text3">Developer&nbsp;<a href="#">&&nbsp;Designer</a></div>
+        <div class="text4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium explicabo accusamus qui, assumenda ab maxime praesentium, nostrum odio corrupti exercitationem sapiente iste necessitatibus numquam laboriosam nobis porro nulla id nisi?
+        Cumque obcaecati, quaerat autem magnam reiciendis voluptatem aperiam cum rerum, nam voluptates enim ab. Modi cupiditate accusamus, doloribus minus harum quam iure officia quo accusantium hic dolores sint distinctio nisi!</div>
+        <div>
+          <button>Let's Talk</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="satir3">
+    <div>
+      <h1>Our Services</h1>
+    </div>
+    <div class="flex container">
+      <div class="card">
+        <div><i class='bx bx-menu'></i></div>
+        <div class="text3">Web Development</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic reiciendis reprehenderit possimus, quos, ab accusantium, enim modi impedit non molestias incidunt cum consectetur sapiente explicabo architecto quisquam a tempora natus.</div>
+        <div>
+          <button>Read More</button>
+        </div>
+      </div>
+      <div class="card">
+        <div><i class='bx bx-user' ></i></div>
+        <div class="text3">Web Development</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic reiciendis reprehenderit possimus, quos, ab accusantium, enim modi impedit non molestias incidunt cum consectetur sapiente explicabo architecto quisquam a tempora natus.</div>
+        <div>
+          <button>Read More</button>
+        </div>
+      </div>
+      <div class="card">
+        <div><i class='bx bx-bell' ></i></div>
+        <div class="text3">Web Development</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic reiciendis reprehenderit possimus, quos, ab accusantium, enim modi impedit non molestias incidunt cum consectetur sapiente explicabo architecto quisquam a tempora natus.</div>
+        <div>
+          <button>Read More</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="satir4">
+    <div class="text5">
+      <h2>Let Me Get You A Beautiful Website.</h2>
+    </div>
+    <div>
+      <button>Hire Me</button>
+    </div>
+  </div>
+  <div class="satir5">
+    <div class="text6">Beril Keser</div>
+    <div class="text7">For more HTML, CSS, and coding tutorial - please click on the </div>
+    <div class="text8">link below tosubscribe to my channel:</div>
+    <div class="flex">
+      <div class="icon"><i class='bx bxl-facebook' ></i></div>
+      <div class="icon"><i class='bx bxl-dribbble' ></i></div>
+      <div class="icon"><i class='bx bxl-whatsapp' ></i></div>
+    </div>
+  </div>
+</body>
+</html>
+

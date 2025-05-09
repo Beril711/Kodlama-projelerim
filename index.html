@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <style>
+    :root {
+      --text: #999999;
+      --bg-gray: #fff;
+      --night-dark: black;
+      --bg-darker: #232323;
+      --green:rgb(84, 141, 110);
+      --big-font: 5rem; 
+      --h2-font: 2.25rem;
+      --h4-font: 1.9rem;
+      --p-font: 1.4rem;
+      --h6-font:1.2rem;
+      --h7-font: 1rem;
+      --space0: 0px;
+      --space1: 8px;
+      --space2: 16px;
+      --space3: 24px;
+      --space4: 32px;
+      --space5: 40px;
+      --space6: 75px;
+      --space7: 100px;
+      --space8: 125px;
+      --space9: 150px;
+      --space10: 200px;
+      --space11: 250px;
+      --space12: 300px;
+      --space13: 400px;
+      --space14: 500px;
+      --space15: 600px;
+      --space16: 695px;
+      --space17: 850px;
+      --container: 1200px;
+    }
+    * {box-sizing: border-box;}
+    ::selection {background-color: var(--bg-darker);color: var(--bg-gray);}
+    body {margin: 0;}
+    main {width: var(--container);margin-top: var(--space5);margin-left: var(--space8);}
+    footer {height: var(--space9);background-color: var(--green);margin-top: var(--space6);text-align: center;color: var(--bg-gray);}
+    footer i {font-size: var(--h6-font);}
+    footer i:hover {color: #68e0a6;}
+    footer .flex {margin-left: var(--space16);}
+    .flex {display: flex;}
+    .card1 {width: var(--space13);box-shadow: 0 4px 8px 0 var(--text), 0 6px 20px 0 var(--text);margin-right: var(--space5);}
+    .card1 img {width: var(--space13);height: var(--space14);}
+    .card1 hr {color: var(--text);margin-top: var(--space3);margin-left: var(--space2);margin-right: var(--space2);}
+    .card2 {width: var(--space17);height:var(--space15) ;box-shadow: 0 4px 8px 0 var(--text), 0 6px 20px 0 var(--text);margin-bottom: var(--space5);}
+    .card2 hr {color: var(--text);margin-top: var(--space3);margin-left: var(--space4);margin-right: var(--space4);}
+    .card3 {width: var(--space17);height:var(--space15) ;box-shadow: 0 4px 8px 0 var(--text), 0 6px 20px 0 var(--text);}
+    .card3 hr {color: var(--text);margin-top: var(--space4);margin-left: var(--space4);margin-right: var(--space4);}
+    .card3 .satir9 {margin-bottom: var(--space2);}
+    .satir1 {margin-top: var(--space2);gap: var(--space2);font-size: var(--p-font);color: var(--text);}
+    .satir1 i {margin-left: var(--space2);font-size: var(--p-font);color: var(--green);}
+    .satir2 {margin-top: var(--space3);gap: var(--space2);font-size: var(--p-font);color: var(--night-dark);}
+    .satir2 i {margin-left: var(--space2);font-size: var(--p-font);color: var(--green);}
+    .satir3 {font-size: var(--p-font);margin-top: var(--space2);margin-left: var(--space2);color: var(--text);}
+    .satir4 {background-color: var(--text);margin-left: var(--space2);margin-right: var(--space2);border-radius: 10px;margin-top: var(--space2);}
+    .satir4 div {background-color: var(--green);color: var(--bg-gray);width: 90%;border-radius: 10px;text-align: center;}
+    .satir5 {background-color: var(--text);margin-left: var(--space2);margin-right: var(--space2);border-radius: 10px;margin-top: var(--space2);}
+    .satir5 div {background-color: var(--green);color: var(--bg-gray);width: 70%;border-radius: 10px;text-align: center;}
+    .satir6 {background-color: var(--text);margin-left: var(--space2);margin-right: var(--space2);border-radius: 10px;margin-top: var(--space2);}
+    .satir6 div {background-color: var(--green);color: var(--bg-gray);width: 85%;border-radius: 10px;text-align: center;}
+    .satir7 {background-color: var(--text);margin-left: var(--space2);margin-right: var(--space2);border-radius: 10px;margin-top: var(--space2);}
+    .satir7 div {background-color: var(--green);color: var(--bg-gray);width: 50%;border-radius: 10px;text-align: center;}
+    .satir8 {background-color: var(--text);margin-left: var(--space2);margin-right: var(--space2);border-radius: 10px;margin-top: var(--space2);}
+    .satir8 div {background-color: var(--green);color: var(--bg-gray);width: 45%;border-radius: 10px;text-align: center;}
+    .satir9 {padding-top: var(--space3);gap: var(--space2);font-size: var(--h4-font);color: var(--night-dark);}
+    .satir9 i {padding-left: var(--space2);font-size: var(--h2-font);color: var(--green);}
+    .satir10 {padding-top: var(--space4);font-size: var(--h6-font);padding-left: var(--space4);}
+    .satir10 a {background-color: var(--green);color: var(--bg-gray);text-decoration: none;border-radius: 4px;padding-left: var(--space1);padding-right: var(--space1);}
+    .satir10 .flex {color: var(--green);gap: var(--space1);margin-top: var(--space2);}
+    .satir11 {color: var(--text);margin-top: var(--space2);font-size: var(--h7-font);margin-left: var(--space4);}
+    .satir12 {padding-bottom: var(--space1);padding-top: var(--space4);}
+    .satir13 {padding-bottom: var(--space1);}
+  </style>
+</head>
+<body>
+  <main class="flex">
+    <div class="card1">
+      <img src="https://i.pinimg.com/736x/78/38/36/7838369ca4265139031cd671fe0f9ea2.jpg" alt="">
+      <div class="flex satir1">
+        <i class='bx bxs-briefcase'></i>
+        <div>Designer</div>
+      </div>
+      <div class="flex satir1">
+        <i class='bx bxs-home'></i>
+        <div>Kırıkkale , Türkiye</div>
+      </div>
+      <div class="flex satir1">
+        <i class='bx bxs-envelope' ></i>
+        <div>b@mail.com</div>
+      </div>
+      <div class="flex satir1">
+        <i class='bx bxs-phone' ></i>
+        <div>01234567890</div>
+      </div>
+      <hr>
+      <div class="flex satir2">
+        <i class='bx bx-menu'></i>
+        <div>Skills</div>
+      </div>
+      <div class="satir3">Adobe Photoshop</div>
+      <div class="satir4">
+        <div>%90</div>
+      </div>
+      <div class="satir3">Photography</div>
+      <div class="satir5">
+        <div>%70</div>
+      </div>
+      <div class="satir3">Media</div>
+      <div class="satir6">
+        <div>%85</div>
+      </div>
+      <div class="flex satir2">
+        <i class='bx bx-world'></i>
+        <div>Languages</div>
+      </div>
+      <div class="satir3">English</div>
+      <div class="satir7">
+        <div>50%</div>
+      </div>
+      <div class="satir3">German</div>
+      <div class="satir8">
+        <div>45%</div>
+      </div>
+    </div>
+    <div>
+      <div class="card2">
+        <div class="satir9 flex">
+          <i class='bx bxs-briefcase-alt' ></i>
+          <div>Work Experience</div>
+        </div>
+        <div class="satir10">
+          <div>Front End Developer / w3schools.com</div>
+          <div class="flex">
+            <i class='bx bxs-calendar' ></i>
+            <div>Jan 2015 - </div>
+            <a href="#">Current</a>
+          </div>
+        </div>
+        <div class="satir11">Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</div>
+        <hr>
+        <div class="satir10">
+          <div>Web Developer / something.com</div>
+          <div class="flex">
+            <i class='bx bxs-calendar' ></i>
+            <div>Mar 2012 - Dec 2014</div>
+          </div>
+        </div>
+        <div class="satir11">Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</div>
+        <hr>
+        <div class="satir10">
+          <div>Graphic Designer / designsomething.com</div>
+          <div class="flex">
+            <i class='bx bxs-calendar' ></i>
+            <div>Jun 2010 - Mar 2012</div>
+          </div>
+        </div>
+        <div class="satir11">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
+      </div>
+      <div class="card3">
+        <div class="satir9 flex">
+          <i class='bx bxs-certification'></i>
+          <div>Education</div>
+        </div>
+        <div class="satir10">
+          <div>W3Schools.com</div>
+          <div class="flex">
+            <i class='bx bxs-calendar' ></i>
+            <div>Forever</div>
+          </div>
+        </div>
+        <div class="satir11">Web Development! All I need to know in one place</div>
+        <hr>
+        <div class="satir10">
+          <div>London Business School</div>
+          <div class="flex">
+            <i class='bx bxs-calendar' ></i>
+            <div>2013 - 2015</div>
+          </div>
+        </div>
+        <div class="satir11">Master Degree</div>
+        <hr>
+        <div class="satir10">
+          <div>School of Coding</div>
+          <div class="flex">
+            <i class='bx bxs-calendar' ></i>
+            <div>2010 - 2013</div>
+          </div>
+        </div>
+        <div class="satir11">Bachelor Degree</div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="satir12">Find me on social media.</div>
+    <div class="flex satir13">
+      <i class='bx bxl-facebook-square' ></i>
+      <i class='bx bxl-instagram' ></i>
+      <i class='bx bxl-snapchat' ></i>
+      <i class='bx bxl-pinterest-alt' ></i>
+      <i class='bx bxl-twitter' ></i>
+      <i class='bx bxl-linkedin'></i>
+    </div>
+    <div>Powered by w3.css</div>
+  </footer>
+</body>
+</html>

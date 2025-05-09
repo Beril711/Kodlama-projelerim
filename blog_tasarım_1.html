@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        *{box-sizing: border-box;}
+        .container{width:1000px;margin: 0 auto;}
+        .flex{display: flex;text-align: center;}
+        .rel{position: relative;}
+        header .flex{display: flex;justify-content: space-between;}
+        body{margin: 0;}
+        header{background-color: black;padding: 40px;}
+        .menu{font-weight: bold;font-size: x-large;color: white;}
+        .name{font-weight: bolder;font-family: Georgia, 'Times New Roman', Times, serif;font-size: x-large;color: white;}
+        .mail{font-weight: bold;font-family: Georgia, 'Times New Roman', Times, serif;font-size: x-large;color: white;}
+        img{width: 400px;height: 250px;margin: 24px;border: 1px solid black;}
+        .card{border: 1px solid black;}
+        ul{margin: 0;padding: 0;}
+        li > ul{display: none;}
+        .satir1,footer,.satir2,.satir3,.satir4{margin-top: 40px;}
+        .satir1>.flex{justify-content: space-between;}
+        .satir2>.flex{justify-content: space-between;}
+        .satir3{padding: 24px;}
+        .satir3 a {text-decoration: none;color:rgb(164, 109, 5);width: 100%;bottom: 0;text-align: center;position: absolute;font-size:large;}
+        .satir3 a:hover{color: black;}
+        .satir4{margin-bottom: 40px;}
+        .foto img{margin-right:150px;margin-left:150px;width: 700px;height: 500px;}
+        .satir4 .baslık{font-family: Georgia, 'Times New Roman', Times, serif;font-size: x-large;font-weight: bold;text-align: center;}
+        .satir4 .unvan{font-family: Georgia, 'Times New Roman', Times, serif;font-size: medium;text-align: center;margin-top: 16px;}
+        .satir4 .tanım{text-align: center;font-family: Georgia, 'Times New Roman', Times, serif;margin-top: 16px;}
+        .link1{width: 500px;height: 250px;border-right: 2px solid black;}
+        .link1 a:hover{background-color: black;color: white;}
+        .link1 ul{list-style-type: circle;background-color: white;}
+        .link1 li{border-bottom: 1px solid black;padding: 8px;}
+        .link2{width: 500px;height: 250px;margin-left: 16px;}
+        .link2 ul{list-style-type: none;gap: 8px;flex-wrap: wrap;padding: 8px;height: 200px;}
+        .link2 a{background-color: rgb(53, 51, 51);margin: 8px;}
+        .link2 a:hover{background-color:black;color: white;}
+        a{text-decoration: none;color: black;padding: 8px;}
+        nav li:hover > ul{display: block;position: absolute;}
+        a:hover {color: white;}
+        nav > li{position: relative;}
+        .satir1 nav > ul > li:not(:last-child){border-right: 1px solid black;}
+        .satir2 nav > ul > li:not(:last-child){border-right: 1px solid black;}
+        nav ul{list-style-type: none;background-color:rgb(215, 212, 212);padding: 16px;font-size: large;}
+        .son{height: 50px;background-color: black;margin-top: 40px;}
+        footer{background-color: white;}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container flex">
+            <div class="menu"><i class='bx bx-menu'></i></div>
+            <div class="name">My Poems</div>
+            <div class="mail">Mail</div>
+        </div>
+    </header>
+    <main class="container">
+        <div>
+            <div class="satir1">
+                <div class="flex">
+                    <div class="card">
+                        <img src="https://avatars.mds.yandex.net/i?id=60aa732c8e4c01de39f8cc0005e7a05f_l-8496612-images-thumbs&ref=rim&n=13&w=900&h=796" alt="">
+                        <div>
+                            <nav>
+                                <ul class="flex">
+                                    <li class="baslık"><a href="#">Dostlar Beni Hatırlasın</a>
+                                        <ul>
+                                            <li><a href="#">Ben giderim adım kalır<br>
+                                                Dostlar beni hatırlasın.<br> 
+                                                Düğün olur bayram gelir<br> 
+                                                Dostlar beni hatırlasın<br>
+                                                
+                                                 
+                                                Can kafeste durmaz uçar<br> 
+                                                Dünya bir han, konan göçer<br> 
+                                                Ay dolanır  yıllar geçer <br>
+                                                Dostlar beni hatırlasın<br>
+                                                
+                                                 
+                                                Can bedenden ayrılacak <br>
+                                                Tütmez baca  yanmaz ocak<br> 
+                                                Selam olsun kucak kucak <br>
+                                                Dostlar beni hatırlasın<br> 
+                                                
+                                                
+                                                Ne gelsemdi, ne giderdim<br>
+                                                Günden güne arttı derdim<br>
+                                                Garip kalır yerim yurdum<br>
+                                                Dostlar beni hatırlasın<br>
+                                                
+                                                
+                                                Açar solar türlü çiçek<br>
+                                                Kimler gülmüş kim gülecek<br>
+                                                Murat yalan ölüm gerçek<br>
+                                                Dostlar beni hatırlasın<br>
+                                                
+                                                
+                                                Gün ikindi akşam olur<br> 
+                                                Gör ki başa neler gelir<br> 
+                                                Veysel gider adı kalır<br> 
+                                                Dostlar beni hatırlasın  
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="baslık"><a href="#">Kara Toprak</a>
+                                        <ul>
+                                            <li><a href="#">Dost dost diye nicesine sarıldım<br>
+                                                Benim sâdık yârim kara topraktır<br>
+                                                Beyhude dolandım boşa yoruldum<br>
+                                                Benim sâdık yârim kara topraktır<br>
+                                                
+                                                Nice güzellere bağlandım kaldım<br>
+                                                Ne bir vefa gördüm ne fayda buldum<br>
+                                                Her türlü isteğim topraktan aldım<br>
+                                                Benim sâdık yârim kara topraktır<br>
+                                                
+                                                Koyun verdi kuzu verdi süt verdi<br>
+                                                Yemek verdi ekmek verdi et verdi<br>
+                                                Kazma ile döğmeyince kıt verdi<br>
+                                                Benim sâdık yârim kara topraktır<br>
+                                                
+                                                Âdem'den bu deme neslim getirdi<br>
+                                                Bana türlü türlü meyva yedirdi<br>
+                                                Her gün beni tepesinde götürdü<br>
+                                                Benim sâdık yârim kara topraktır<br>
+                                                
+                                                Karnın yardım kazmayınan belinen<br>
+                                                Yüzün yırttım tırnağınan elinen<br>
+                                                Yine beni karşıladı gülünen <br>
+                                                Benim sâdık yârim kara topraktır<br>
+                                                
+                                                İşkence yaptıkça bana gülerdi<br>
+                                                Bunda yalan yoktur herkes de gördü<br>
+                                                Bir çekirdek verdim dört bostan verdi<br>
+                                                Benim sadık yârim kara topraktır<br>
+                                                
+                                                Havaya bakarsam hava alırım<br>
+                                                Toprağa bakarsam dua alırım<br>
+                                                Topraktan ayrılsam nerde kalırım<br>
+                                                Benim sâdık yârim kara topraktır<br>
+                                                
+                                                Dileğin varsa iste Allah'tan<br>
+                                                Almak için uzak gitme topraktan<br>
+                                                Cömertlik toprağa verilmiş Hak'tan<br>
+                                                Benim sâdık yârim kara topraktır<br>
+                                                
+                                                Hakikat ararsan açık bir nokta<br>
+                                                Allah kula yakın kul da Allah'a<br>
+                                                Hakkın gizli hazinesi   toprakta<br>
+                                                Benim sâdık yârim kara topraktır<br>
+                                                
+                                                Bütün kusurumuzu toprak gizliyor<br>
+                                                Merhem çalıp yaralarımı düzlüyor<br>
+                                                Kolun açmış yollarımı gözlüyor<br>
+                                                Benim sâdık yârim kara topraktır<br>
+                                                
+                                                Her kim ki olursa bu sırra mazhar<br>
+                                                Dünyaya bırakır ölmez bir eser<br>
+                                                Gün gelir Veysel'i bağrına basar<br>
+                                                Benim sâdık yârim kara topraktır
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="baslık"><a href="#">Uzun İnce Bir Yoldayım</a>
+                                        <ul>
+                                            <li><a href="#">Uzun ince bir yoldayım <br>
+                                                Gidiyorum gündüz gece <br>
+                                                Bilmiyorum ne haldayım <br>
+                                                Gidiyorum gündüz gece <br>
+                                                
+                                                
+                                                Dünyaya geldiğim anda <br>
+                                                Yürüdüm aynı zamanda <br>
+                                                İki kapılı bir handa <br>
+                                                Gidiyorum gündüz gece <br>
+                                                
+                                                
+                                                Uykuda dahi yürüyom <br>
+                                                Kalkmaya sebep arıyom <br>
+                                                Gidenleri hep görüyom <br>
+                                                Gidiyorum gündüz gece <br>
+                                                
+                                                
+                                                Kırk dokuz yıl bu yollarda<br> 
+                                                Ovada dağda çöllerde <br>
+                                                Düşmüşüm gurbet ellerde <br>
+                                                Gidiyorum gündüz gece <br>
+                                                
+                                                
+                                                Düşünülürse derince <br>
+                                                Irak görünür görünce<br> 
+                                                Yol bir dakka miktarınca<br> 
+                                                Gidiyorum gündüz gece<br>
+                                                
+                                                 
+                                                Şaşar Veysel işbu hâle<br>
+                                                Gâh ağlaya gâhi güle<br>
+                                                Yetişmek için menzile<br>
+                                                Gidiyorum gündüz gece</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://i0.wp.com/perexpteamworks.com/wp-content/uploads/2023/10/cahit-sitki-taranci.webp?fit=900%2C892&amp;ssl=1" alt="">
+                        <div>
+                            <nav>
+                                <ul class="flex">
+                                    <li class="baslık"><a href="#">Otuz Beş Yaş Şiiri</a>
+                                        <ul>
+                                            <li><a href="#">Yaş otuz beş! yolun yarısı eder.<br>
+                                                Dante gibi ortasındayız ömrün.<br>
+                                                Delikanlı çağımızdaki cevher,<br>
+                                                Yalvarmak, yakarmak nafile bugün,<br>
+                                                Gözünün yaşına bakmadan gider.<br>
+                                                Şakaklarıma kar mı yağdı ne var?<br>
+                                                Benim mi Allahım bu çizgili yüz?<br>
+                                                Ya gözler altındaki mor halkalar?<br>
+                                                Neden böyle düşman görünürsünüz,<br>
+                                                Yıllar yılı dost bildiğim aynalar?<br>
+                                                Zamanla nasıl değişiyor insan!<br>
+                                                Hangi resmime baksam ben değilim.<br>
+                                                Nerde o günler, o şevk, o heyecan?<br>
+                                                Bu güler yüzlü adam ben değilim;<br>
+                                                Yalandır kaygısız olduğum yalan.<br>
+                                                Hayal meyal şeylerden ilk aşkımız;<br>
+                                                Hatırası bile yabancı gelir.<br>
+                                                Hayata beraber başladığımız,<br>
+                                                Dostlarla da yollar ayrıldı bir bir;<br>
+                                                Gittikçe artıyor yalnızlığımız.<br>
+                                                Gökyüzünün başka rengi de varmış!<br>
+                                                Geç farkettim taşın sert olduğunu.<br>
+                                                Su insanı boğar, ateş yakarmış!<br>
+                                                Her doğan günün bir dert olduğunu,<br>
+                                                İnsan bu yaşa gelince anlarmış.<br>
+                                                Ayva sarı nar kırmızı sonbahar!<br>
+                                                Her yıl biraz daha benimsediğim.<br>
+                                                Ne dönüp duruyor havada kuşlar?<br>
+                                                Nerden çıktı bu cenaze? ölen kim?<br>
+                                                Bu kaçıncı bahçe gördüm tarumar?<br>
+                                                Neylersin ölüm herkesin başında.<br>
+                                                Uyudun uyanamadın olacak.<br>
+                                                Kimbilir nerde, nasıl, kaç yaşında?<br>
+                                                Bir namazlık saltanatın olacak,<br>
+                                                Taht misali o musalla taşında.</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="baslık"><a href="#">Gece Şarkısı</a>
+                                        <ul>
+                                            <li><a href="#">Âlemde gündüz gönlüme işkencedir;<br>
+                                                Bence bayram ufukta gün bitincedir.<br>
+                                                Günün geçit vermez karlı dağlarını<br>
+                                                Sanki sihirbaz bir el eritincedir.<br>
+                                                Bütün gün beklediğim bahar ki gece,<br>
+                                                Gökte yıldızların da ümidincedir.<br>
+                                                Yollar, yollarda nihayet içime denk,<br>
+                                                Sonsuzlaşarak başı boş gidincedir.<br>
+                                                Ben ister güleyim, ister ağlayayım,<br>
+                                                Sesimi yalnız kendim işitincedir.<br>
+                                                Âlemde gündüz gönlüme işkencedir;<br>
+                                                Bence bayram ufukta gün bitincedir.</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="baslık"><a href="#">Karasevda</a>
+                                        <ul>
+                                            <li><a href="#">Bir kere sevdaya tutulmaya gör;<br>
+                                                Ateşlere yandığının resmidir.<br>
+                                                Aşık dediğin, Mecnun misali kör;<br>
+                                                Ne bilsin alemde ne mevsimidir.<br>
+                                                Dünya bir yana, o hayal bir yana;<br>
+                                                Bir meşaledir pervaneyim ona.<br>
+                                                Altında bir ömür dönedolana<br>
+                                                Ağladığım yer penceresi midir?<br>
+                                                Bir köşeye mahzun çekilen için,<br>
+                                                Yemekten içmekten kesilen için,<br>
+                                                Sensiz uykuyu haram bilen için,<br>
+                                                Ayrılık ölümün diğer ismidir.</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="satir2">
+                <div class="flex">
+                    <div class="card">
+                        <img src="https://metaforya.com/wp-content/uploads/2020/07/ozdemir-asaf.jpg" alt="">
+                        <div>
+                            <nav>
+                                <ul class="flex">
+                                    <li class="baslık"><a href="#">Lavinia</a>
+                                        <ul>
+                                            <li><a href="#">Sana gitme demeyeceğim.<br>
+                                                Üşüyorsun ceketimi al.<br>
+                                                Günün en güzel saatleri bunlar.<br>
+                                                Yanımda kal.<br>
+                                                Sana gitme demeyeceğim.<br>
+                                                Gene de sen bilirsin.<br>
+                                                Yalanlar istiyorsan yalanlar söyleyeyim,<br>
+                                                İncinirsin.<br>
+                                                Sana gitme demeyeceğim,<br>
+                                                Ama gitme, Lavinia.<br>
+                                                Adını gizleyeceğim<br>
+                                                Sen de bilme, Lavinia.</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="baslık"><a href="#">Bekleyen Şarkı</a>
+                                        <ul>
+                                            <li><a href="#">Sizin için yola çıkmış bir şarkı,<br>
+                                                Düşünülmüş gözleriniz üstüne.<br>
+                                                İçin-için yaratılmış bir şarkı,<br>
+                                                Bırakılmış yollarınız üstüne.<br>
+                                                Sizsiz sizi yaşanılmış bir şarkı.<br>
+                                                Seslerini uzağınız derledi,<br>
+                                                Sözlerini kulağınız derledi,<br>
+                                                Anlamını dudağınız derledi,<br>
+                                                Sizsiz size uzanılmış bir şarkı;<br>
+                                                Özlemini kucağınız derledi.</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://img-s3.onedio.com/id-6295494b356941535850e4a2/rev-0/w-900/h-506/f-jpg/s-72e5d76501c675a4ac2795c0e995f8e4cb8b4b28.jpg" alt="">
+                        <div>
+                            <nav>
+                                <ul class="flex">
+                                    <li class="baslık"><a href="#">Akşam Üstü Rüyası</a>
+                                        <ul>
+                                            <li><a href="#">Şimdi gemiler geçer uzaklardan<br>
+                                                Gönlüm güvertede sereserpedir.<br>
+                                                Işıklı geceler,saz sesleri, peynir ekmek<br>
+                                                Ne biletim ne param ne dostum var<br>
+                                                Pır pır eder yüreğim bakındıkça...<br>
+                                                -Uyan Turgut um, garibim, uyan<br>
+                                                Bura Terme'dir.<br>
+                                                Terme köprüsünden kamyonlar geçer,<br>
+                                                Irgatlar üç orada beş burada konuşurlar<br>
+                                                Bir gece başlar, yarı siyah, yarı kırmızı<br>
+                                                Cigaramı yakar evime dönerim...<br>
+                                                -Gidin gemiler, gidin<br>
+                                                Vardığınız yerlere selam edin<br>
+                                                Gün olur bütün kaygılardan uzak<br>
+                                                Ben de gelirim...</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="baslık"><a href="#">Gecenin Şarkısı</a>
+                                        <ul>
+                                            <li><a href="#">gecenin şarkısı markısı kimindir<br>
+                                                hangi şarkısı üstelik<br>
+                                                gecenin şarkısı senin olsun ben istemem<br>
+                                                üstelik o şarkı herkesindir<br>
+                                                çünkü bulutlar konuşur<br>
+                                                kuşlar uyur<br>
+                                                ses uyanır<br>
+                                                şimdi kimindir gecenin şarkısı<br>
+                                                kimi hüzzamdan bir şarkı besteler uykusunda<br>
+                                                otlar büyür<br>
+                                                ocaklara girilir madenlerde<br>
+                                                ne düşler görür insan kimbilir<br>
+                                                gece onundur</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="satir3 rel">
+                <div><a href="#">--CLICK HERE FOR MORE--</a></div>
+            </div>
+            <hr>
+            <div class="satir4">
+                <div class="foto flex">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjuy0NXBWFgIT4s89rZOzHsCWqK8wQBFIm2q-8k9snM-WFREUowJ0NmSTyvcKbJbNNp3qtxnGJ-vp3VH7Zffkr9yMB1lMgOjENTO5ld-COqM-C5r4yrMytPLpbmzu3i1xz-E0i3s66cs7irxql-TVIu8owcMTJRxYB8cXwHq_NNidjStsYJ6X9C20Rg78I/s1920/N%C3%A2z%C4%B1m%20Hikmet.jpg" alt="">
+                </div>
+                <div class="baslık">
+                    <div>NAZIM HİKMET</div>
+                </div>
+                <div class="unvan">
+                    <div>famous turkish poet</div>
+                </div>
+                <div class="tanım">
+                    <div>Nâzım Hikmet (d. 14 Ocak 1902; Selanik, Osmanlı İmparatorluğu — ö. 3 Haziran 1963; Moskova, SSCB), Türk şair ve yazardır. <br> Şiirleri elliden fazla dile çevrilmiş ve eserleri birçok ödül almıştır.Türkiye'de serbest nazımın ilk uygulayıcısı ve çağdaş Türk şiirinin en önemli isimlerindendir. <br> Uluslararası bir üne ulaşmıştır ve dünyada 20. yüzyılın en gözde şairleri arasında gösterilmektedir.</div>
+                </div>
+            </div>
+            <hr>
+            
+        </div>
+    </main>
+    <footer>
+        <div class="satir5">
+            <div class="container flex">
+                <div class="link1">
+                    <h4>CATEGORIES</h4>
+                    <div>
+                        <nav>
+                            <ul>
+                                <li><a href="#">Click here for Yunus Emre poems</a></li>
+                                <li><a href="#">Click here for Ahmet Arif poems</a></li>
+                                <li><a href="#">Click here for Cemal Süreya poems</a></li>
+                                <li><a href="#">Click here for Mahzuni Şerif poems</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="link2">
+                    <h4>POPULAR TAGS</h4>
+                    <div>
+                        <ul class="flex">
+                            <li><a href="#">family</a></li>
+                            <li><a href="#">love</a></li>
+                            <li><a href="#">peace</a></li>
+                            <li><a href="#">success</a></li>
+                            <li><a href="#">environment</a></li>
+                            <li><a href="#">sea</a></li>
+                            <li><a href="#">full moon</a></li>
+                            <li><a href="#">night</a></li>
+                            <li><a href="#">sky</a></li>
+                            <li><a href="#">tears</a></li>
+                            <li><a href="#">life</a></li>
+                            <li><a href="#">darkness</a></li>
+                            <li><a href="#">grief</a></li>
+                            <li><a href="#">silence</a></li>
+                            <li><a href="#">betrayal</a></li>
+                            <li><a href="#">woman</a></li>
+                            <li><a href="#">brother</a></li>
+                            <li><a href="#">fear</a></li>
+                            <li><a href="#">evil</a></li>
+                            <li><a href="#">hatred</a></li>
+                            <li><a href="#">longing</a></li>
+                            <li><a href="#">patience,</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="son"></div>
+</body>
+</html>
